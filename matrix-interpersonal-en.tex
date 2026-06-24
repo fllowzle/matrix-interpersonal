@@ -1,11 +1,34 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage{amsmath,amssymb}
-\usepackage{braket}
-\usepackage{geometry}
-\geometry{margin=2.5cm}
+\documentclass[11pt,a4paper]{article}
 
-\title{\textbf{A Quantum Mechanical Analogy for Interpersonal Understanding}\\——Operators, Representations, and Eigenvalues}
-\author{Zhang Mingkai\thanks{Department of Physics, Xiamen University.}\quad Yu Qing\thanks{Co-first author.}}
+% Typography
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% Layout
+\usepackage{geometry}
+\geometry{margin=2.7cm}
+
+% Math
+\usepackage{amsmath}
+\usepackage{braket}
+
+% Links
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+
+% Title formatting
+\usepackage{titling}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\end{center}}
+\preauthor{\begin{center}\large}
+\postauthor{\end{center}}
+
+\title{A Quantum Mechanical Analogy\\for Interpersonal Understanding\\[4pt]
+\large Operators, Representations, and Eigenvalues}
+\author{\textbf{Zhang Mingkai}\thanks{Department of Physics, Xiamen University.}
+\quad \textbf{Yu Qing}\thanks{Co-first author.}}
 \date{June 2026}
 
 \begin{document}
@@ -13,90 +36,112 @@
 \maketitle
 
 \begin{abstract}
-This paper borrows the mathematical structure of quantum mechanics——operators, eigenvalues, unitary transformations, and matrix elements——to construct an analogical framework for understanding interpersonal differences and tolerance. The central thesis: each person corresponds to a unique operator; the same external event, when acted upon different operators, collapses into different eigenvalues. Understanding another person does not mean modifying their matrix elements, but rather performing a unitary transformation within one's own representation to obtain their eigenvalues, while accepting the incommensurability of matrix elements.
+\noindent
+This paper borrows the mathematical structure of quantum mechanics---operators, eigenvalues, unitary transformations, and matrix elements---to construct an analogical framework for understanding interpersonal differences and tolerance. The central thesis: each person corresponds to a unique operator; the same external event, when acted upon different operators, collapses into different eigenvalues. Understanding another person does not mean modifying their matrix elements, but rather performing a unitary transformation within one's own representation to obtain their eigenvalues, while accepting the incommensurability of matrix elements.
 \end{abstract}
 
-\section{Fundamental Postulate: Each Person Is an Operator}
+\vspace{4pt}
+\hrule
+\vspace{12pt}
 
-Let each person $P$ correspond to a linear operator $\hat{P}$, acting on a common state space $\mathcal{H}$. This operator is constituted by its \emph{matrix elements}——upbringing, traumatic experiences, ways of being loved, books read, paths walked. Some of these matrix elements become fixed after $\hat{P}$ is constructed; others remain mutable.
+\section{Fundamental Postulate}
+
+\noindent
+Let each person $P$ correspond to a linear operator $\hat{P}$, acting on a common state space $\mathcal{H}$. This operator is constituted by its \emph{matrix elements}---upbringing, traumatic experiences, ways of being loved, books read, paths walked. Some of these matrix elements become fixed after $\hat{P}$ is constructed; others remain mutable.
 
 The same external event $\ket{\psi}$ (e.g., separation, conflict, choice), when applied to different operators, produces different eigenvalues:
-\begin{equation}
+\begin{equation}\label{eq:eigen}
 \hat{P}_A \ket{\psi} = \lambda_A \ket{\phi_A},\qquad
 \hat{P}_B \ket{\psi} = \lambda_B \ket{\phi_B}.
 \end{equation}
-That $\lambda_A \neq \lambda_B$ is the norm, and implies no fault on either side. Both solutions are valid so long as they satisfy the same boundary condition——for example, ``continuing to move forward in life.''
+That $\lambda_A \neq \lambda_B$ is the norm, and implies no fault on either side. Both solutions are valid so long as they satisfy the same boundary condition---for example, ``continuing to move forward in life.''
 
 \section{Eigenvalues, Not Matrix Elements}
 
+\noindent
 The difference between two people manifests at two levels:
 
 \begin{enumerate}
-\item \textbf{The eigenvalue level}: different interpretations of, or behavioral responses to, the same event.
-\item \textbf{The matrix element level}: the concrete, subtle, incommensurable texture of their worldview.
+\item \textbf{The eigenvalue level:} different interpretations of, or behavioral responses to, the same event.
+\item \textbf{The matrix element level:} the concrete, subtle, incommensurable texture of their worldview.
 \end{enumerate}
 
-The goal of understanding another person is not to make their matrix elements coincide with one's own——that is impossible. The goal is to obtain their \emph{eigenvalues}: within their own internal logic, why they chose this path, why they produced this reaction.
+The goal of understanding another person is not to make their matrix elements coincide with one's own---that is impossible. The goal is to obtain their \emph{eigenvalues}: within their own internal logic, why they chose this path, why they produced this reaction.
 
 Obtaining eigenvalues does not require modifying the other; it requires reasoning \emph{within one's own representation}:
 \begin{equation}
-\text{The choice I observe} \;\longrightarrow\; \text{The reason I infer} \;\longrightarrow\; \text{The coherence of that reason within their worldview}.
+\text{Choice observed}
+\;\longrightarrow\;
+\text{Reason inferred}
+\;\longrightarrow\;
+\text{Coherence within their worldview}.
 \end{equation}
 
 \section{Unitary Transformations and Representations}
 
-A unitary transformation preserves eigenvalues but not matrix elements. Transforming operator $\hat{P}_B$ into the representation of $\hat{P}_A$:
+\noindent
+A unitary transformation preserves eigenvalues but not matrix elements. Transforming $\hat{P}_B$ into the representation of $\hat{P}_A$:
 \begin{equation}
 \hat{P}'_B = U^\dagger \hat{P}_B U,
 \end{equation}
-yields a translation of $\hat{P}_B$ into the language of $A$. The eigenvalue $\lambda_B$ is invariant under this transformation: \textbf{the core logic of the other can be understood, given sufficient effort of translation.} However, the transformed matrix elements $\bra{i}\hat{P}'_B\ket{j}$ differ from the original $\bra{i}\hat{P}_B\ket{j}$: \textbf{what you see in the other's coordinate system is always your translation, never their original vision.}
+yields a translation of $\hat{P}_B$ into the language of $A$. The eigenvalue $\lambda_B$ is invariant: \textbf{the core logic of the other can be understood, given sufficient effort of translation.} Yet the transformed matrix elements $\bra{i}\hat{P}'_B\ket{j}$ differ from the original $\bra{i}\hat{P}_B\ket{j}$: \textbf{what you see in the other's coordinate system is always your translation, never their original vision.}
 
-This is why interpersonal understanding has an insurmountable boundary:
+Hence interpersonal understanding has an insurmountable boundary:
 
 \begin{itemize}
 \item Eigenvalues can be obtained: \emph{why} the other acted as they did;
 \item Matrix elements cannot be known: the concrete sensations, the texture of every frame, those indescribable details.
 \end{itemize}
 
-Here lies a subtle point easily mistaken: the unitary transformation must be performed \emph{within one's own representation}, not \emph{within the other's representation}. The other's representation——their childhood, each racing heartbeat, each moment they chose silence——is forever inaccessible to me. That is the eigenrepresentation of their operator, naturally closed to my observation. What I can do is accept this closure: not attempt to burrow into the other's coordinate system, but complete the translation within my own linguistic framework. Physics does not demand that an observer become the observed particle; it only asks the observer to approximate the measured values with their own instruments.
+A subtle point: the unitary transformation must be performed \emph{within one's own representation}, not \emph{within the other's}. The other's representation---their childhood, each racing heartbeat, each moment they chose silence---is forever inaccessible. That is the eigenrepresentation of their operator, naturally closed to external observation. What one can do is accept this closure: not burrow into the other's coordinate system, but complete the translation within one's own linguistic framework. Physics does not demand that an observer become the observed particle; it only asks the observer to approximate the measured values with their own instruments.
 
-Attempting to enter the other's representation——manifesting interpersonally as forcibly breaching the other's psychological boundary——is not a unitary transformation but a perturbation of the operator itself. The greater the perturbation, the more distorted the measured eigenvalues become. Genuine understanding is to stand within one's own coordinate system, acknowledge the limitation of the transformation, and then maximally approximate the other's eigenspectrum.
+Attempting to enter the other's representation---manifesting interpersonally as forcibly breaching a psychological boundary---is not a unitary transformation but a perturbation of the operator itself. The greater the perturbation, the more distorted the measured eigenvalues. Genuine understanding is to stand within one's own coordinate system, acknowledge the limitation of the transformation, and maximally approximate the other's eigenspectrum.
 
 \section{The Inverse Problem Is Ill-Posed}
 
-From a purely mathematical standpoint, attempting to reconstruct the other's matrix elements from eigenvalues alone is an infeasible inverse problem. A set of eigenvalues does not uniquely determine an operator: infinitely many distinct matrices can share the same set of eigenvalues, while their matrix element structures——the concrete textures that constitute why the other is who they are——differ profoundly. The same act of \emph{blocking someone} (an eigenvalue) can arise from self-protection, from weariness, from a new partner's request, from a sudden surge of release on some late night. Eigenvalues tell you \emph{what}, not \emph{why}. To know why requires the matrix elements. And the matrix elements, at the moment you transform into your own representation, have already been irreversibly altered.
+\noindent
+From a mathematical standpoint, reconstructing matrix elements from eigenvalues alone is an infeasible inverse problem. A set of eigenvalues does not uniquely determine an operator: infinitely many distinct matrices can share the same eigenvalues, while their matrix element structures---the concrete textures that constitute why the other is who they are---differ profoundly. The same act of \emph{blocking someone} (an eigenvalue) can arise from self-protection, from weariness, from a new partner's request, from a sudden surge of release on some late night. Eigenvalues tell you \emph{what}, not \emph{why}. To know why requires matrix elements---and the matrix elements, at the moment you transform into your own representation, have already been irreversibly altered.
 
-This is why \emph{understanding} can never equal \emph{omniscience}. You can compute what the other did, but not why they did it——at least not with mathematical precision. You can only approximate, conjecture, extrapolate from your own experience. Approximate to a sufficient degree, and that is understanding. Pursue further, and it is futility.
+Thus \emph{understanding} can never equal \emph{omniscience}. You can compute what the other did, but not why they did it---at least not with mathematical precision. You can only approximate, conjecture, extrapolate from your own experience. Approximate to a sufficient degree, and that is understanding. Pursue further, and it is futility.
 
-\section{Rigid vs. Flexible Matrix Elements}
+\section{Rigid and Flexible Matrix Elements}
 
-Some matrix elements, once formed, no longer change. Trauma, deep fear, boundary sensitivity——these are rigid. They constitute part of the other's terrain. To walk this terrain, one cannot expect the land to reshape itself for you; one can only detour.
+\noindent
+Some matrix elements, once formed, no longer change. Trauma, deep fear, boundary sensitivity---these are rigid. They constitute part of the other's terrain. To walk this terrain, one cannot expect the land to reshape itself; one can only detour.
 
-Other matrix elements——self-perception, the interpretive framework applied to the past, the degree of reconciliation with oneself——can be flexible. Through sustained reflection, they gradually soften, manifesting as the same person, at different points in time, developing new understandings of the same event.
+Other matrix elements---self-perception, the interpretive framework applied to the past, the degree of reconciliation with oneself---can be flexible. Through sustained reflection, they gradually soften, manifesting as the same person, at different points in time, developing new understandings of the same event.
 
-The best form of tolerance is not to alter the other's rigid boundaries, but to recognize them and acknowledge their reality. Simultaneously, one continuously cultivates one's own flexible matrix elements, so that when encountering outputs different from one's own, they do not immediately collapse into ``the other is wrong.''
+The best form of tolerance is not to alter the other's rigid boundaries, but to recognize them and acknowledge their reality---while continuously cultivating one's own flexible matrix elements, so that when encountering outputs different from one's own, they do not immediately collapse into ``the other is wrong.''
 
 \section{Tolerance as Spectral Decomposition}
 
-Tolerance is not a static form of ``endurance.'' Tolerance is a dynamic process of \emph{spectral decomposition}:
+\noindent
+Tolerance is not a static form of ``endurance.'' It is a dynamic process of \emph{spectral decomposition}:
 
 \begin{enumerate}
-\item \textbf{Spectrum recognition}: identify the other's eigenvalues——this is the lifestyle they have chosen, this is their pattern of response to events. It differs from mine, but it is self-consistent within their operator architecture.
-\item \textbf{Spectrum expansion}: each attempt to understand someone previously incomprehensible adds new off-diagonal coupling terms to one's own operator. The eigenspectrum expands; ten years later, encountering a stranger, there will not be only one output; there will be a set of candidate explanations from which to choose the most fitting.
-\item \textbf{Spectrum accommodation}: the same physical system permits the coexistence of different representations. Two understandings of the same event, so long as both lead to reasonable practical outcomes, are parallel and non-contradictory.
+\item \textbf{Spectrum recognition.} Identify the other's eigenvalues---the lifestyle they have chosen, their pattern of response to events. It differs from mine, but it is self-consistent within their operator architecture.
+
+\item \textbf{Spectrum expansion.} Each attempt to understand someone previously incomprehensible adds new off-diagonal coupling terms to one's own operator. The eigenspectrum expands; ten years later, encountering a stranger, there will not be only one output---there will be a set of candidate explanations from which to choose the most fitting.
+
+\item \textbf{Spectrum accommodation.} The same physical system permits coexisting representations. Two understandings of the same event, so long as both lead to reasonable practical outcomes, are parallel and non-contradictory.
 \end{enumerate}
 
 \section{Conclusion}
 
-To describe interpersonal understanding in the language of physics is not to reduce persons to particles, but to demonstrate that \textbf{the hardest scientific language can also tell the softest truths}.
+\noindent
+To describe interpersonal understanding in the language of physics is not to reduce persons to particles, but to demonstrate that \textbf{the hardest scientific language can also tell the softest truths.}
 
-Eigenvalues can be sought; matrix elements cannot be known. Understanding is a process of perpetual approximation, not a once-and-for-all arrival. We are not meant to understand everyone, but within finite lives, to continually expand our own eigenspectrum, to continually attempt, through unitary transformations, to translate those operators that do not commute with ours.
+Eigenvalues can be sought; matrix elements cannot be known. Understanding is a process of perpetual approximation, not a once-and-for-all arrival. We are not meant to understand everyone, but within finite lives, to continually expand our own eigenspectrum---to continually attempt, through unitary transformations, to translate those operators that do not commute with ours.
 
-Tolerance is not endurance. Tolerance is——seeing that another operator's eigenvalue truly differs from yours, and then saying: ``Interesting. Their solution is also a solution.''
+Tolerance is not endurance. Tolerance is seeing that another operator's eigenvalue truly differs from yours, and then saying:
+
+\begin{center}
+\textit{``Interesting. Their solution is also a solution.''}
+\end{center}
 
 \bigskip
 \begin{flushright}
-——The first author proposed the core framework and physical analogy;\\
+---The first author proposed the core framework and physical analogy;\\
 the second author provided listening and a sustained dialogical field.\\
 Quantum mechanics does not record which fluctuation occurred first.\\
 Nor does this paper.
