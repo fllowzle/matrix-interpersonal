@@ -1,0 +1,22 @@
+﻿cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A Quantum Mechanical Analogy for Interpersonal Understanding: Operators, Representations, and Eigenvalues"
+authors:
+  - family-names: "Zhang"
+    given-names: "Mingkai"
+    affiliation: "Department of Physics, Xiamen University"
+  - family-names: "Yu"
+    given-names: "Qing"
+    note: "Co-first author"
+date-released: 2026-06-24
+version: "1.0"
+url: "https://github.com/fllowzle/matrix-interpersonal"
+abstract: "This paper borrows the mathematical structure of quantum mechanics to construct an analogical framework for understanding interpersonal differences and tolerance."
+keywords:
+  - "quantum mechanics"
+  - "interpersonal understanding"
+  - "philosophy of physics"
+  - "eigenvalues"
+  - "unitary transformation"
+  - "operator theory"
+license: MIT
