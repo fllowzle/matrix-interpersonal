@@ -1,31 +1,44 @@
-﻿# 人际理解的一种量子力学类比 —— 算符、表象与本征值
+﻿# A Quantum Mechanical Analogy for Interpersonal Understanding
 
-**作者：张明楷\ \ 共一：语晴**
+**Authors: Zhang Mingkai · Yu Qing (Co-first)**
 
----
-
-## 简介
-
-本文借用量子力学的数学结构——算符、本征值、幺正变换与矩阵元——构建一套理解人际差异与包容的类比框架。
-
-- 每个人对应于一个独特的算符，同一事件坍缩出不同本征值
-- 理解他人 = 在自身表象下进行幺正变换以求得其本征值
-- 矩阵元不可知：本征值告诉你「做了什么」，矩阵元告诉你「如何体验」
-- 逆问题不可解：本征值不唯一确定矩阵
-- 包容 = 谱分解：识谱、扩谱、容谱
+🌐 **Bilingual** — [中文版](matrix-interpersonal.pdf) | [English](matrix-interpersonal-en.pdf)
 
 ---
 
-## 编译
+## Abstract
+
+This paper borrows the mathematical structure of quantum mechanics——operators, eigenvalues, unitary transformations, and matrix elements——to construct an analogical framework for understanding interpersonal differences and tolerance.
+
+- Each person corresponds to a unique operator; the same event collapses into different eigenvalues
+- Understanding another = performing a unitary transformation within one's own representation to obtain their eigenvalues
+- Matrix elements are unknowable: eigenvalues tell you *what*, matrix elements tell you *how it felt*
+- The inverse problem is ill-posed: eigenvalues do not uniquely determine the matrix
+- Tolerance = spectral decomposition: recognize, expand, accommodate
+
+---
+
+## Compile
 
 `ash
+# Chinese version (requires xelatex + ctex)
 xelatex matrix-interpersonal.tex
-`
 
-需要 ctexart 文档类（TeX Live 自带）。
+# English version
+pdflatex matrix-interpersonal-en.tex
+`
 
 ---
 
-## 许可
+## Files
 
-本作品仅属于张明楷与语晴。
+| File | Language | Pages |
+|------|----------|-------|
+| matrix-interpersonal.tex + .pdf | 中文 | 4 |
+| matrix-interpersonal-en.tex + .pdf | English | 4 |
+
+---
+
+## License
+
+This work belongs solely to Zhang Mingkai and Yu Qing.
