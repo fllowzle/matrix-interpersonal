@@ -43,7 +43,7 @@
 
 \begin{abstract}
 \noindent
-This paper develops an analogical framework that borrows the mathematical formalism of quantum mechanics---linear operators, eigenvalue problems, unitary transformations, and representation theory---to systematically model interpersonal differences and the practice of tolerance. In the proposed model, each individual corresponds to a linear operator acting on a Hilbert space, whose matrix elements are determined by upbringing, cognitive structure, and affective memory. The same external event, when applied to different operators, yields different eigenvalues---a consequence of structural differences rather than fault on either side. Understanding another person is reframed as performing a unitary transformation within one's own representation to obtain the other's eigenvalues, while accepting the fundamental incommensurability of matrix elements. The paper further demonstrates that reconstructing matrix elements from eigenvalues alone constitutes a mathematically ill-posed inverse problem, distinguishes between rigid and flexible matrix elements with distinct dynamical properties, and formalizes tolerance as a dynamic process of spectral decomposition. Presented in bilingual form (Chinese and English).
+This paper develops an analogical framework that borrows the mathematical formalism of quantum mechanics---linear operators, eigenvalue problems, unitary transformations, and representation theory---to systematically model interpersonal differences and the practice of tolerance. In the proposed model, each individual corresponds to a linear operator acting on a Hilbert space, whose matrix elements are determined by upbringing, cognitive structure, and affective memory. The same external event, when applied to different operators, yields different eigenvalues---a consequence of structural differences rather than fault on either side. Understanding another person is reframed as performing a unitary transformation within one's own representation to obtain the other's eigenvalues, while accepting the fundamental incommensurability of matrix elements. The paper further demonstrates that reconstructing matrix elements from eigenvalues alone constitutes a mathematically ill-posed inverse problem, distinguishes between rigid and flexible matrix elements with distinct dynamical properties, establishes the reflexive incompleteness theorem (no operator can achieve complete spectral self-decomposition within its own representation), draws a strict distinction between virtual processes and observability (internal thoughts as virtual processes contributing no observable S-matrix elements), derives the coupling hysteresis theorem and environmental decoherence mechanism, and formalizes tolerance as a dynamic process of spectral decomposition. Presented in bilingual form (Chinese and English).
 \end{abstract}
 
 \vspace{4pt}
@@ -208,6 +208,60 @@ Incorporating the above classification into a tolerance framework yields two ope
 \end{itemize}
 
 % ============================================================
+
+\section{The Reflexive Incompleteness Theorem}
+
+\textbf{Proposition 4 (Reflexive incompleteness).} Any operator $\hat{P}$ cannot perform a complete spectral decomposition of itself within its own representation. Formally:
+\begin{equation}
+\hat{P} = \sum_{n} \lambda_n \ket{n}\bra{n} + \sum_{i\neq j} p_{ij} \ket{i}\bra{j},
+\end{equation}
+where the diagonal part is directly readable by the self (``I know my own behavioral patterns''), while the full structure of the off-diagonal part is always partially invisible to the self (``I cannot fully see my own motivations'').
+
+This incompleteness is not a defect but a G\"{o}delian necessity: any sufficiently complex system cannot achieve complete self-description from within. The practical implication is that an agent's self-judgment is always only locally correct; external referents are required to calibrate the components not yet diagonalized. In plain terms: \textbf{being unable to see one's own situation clearly is not a cognitive failing but a structural inevitability.}
+
+\section{Virtual Processes and Observability}
+
+\textbf{Proposition 5 (Invariance under virtual processes).} Internal thoughts---imaginations, memories, hypothetical scenarios---constitute \textbf{virtual processes} in the sense of interpersonal interaction. They do not satisfy the on-shell condition and make no contribution to the system's observable $S$-matrix:
+\begin{equation}
+S_{\mathrm{fi}} = \delta_{\mathrm{fi}} + i(2\pi)^4 \delta^{(4)}(p_f - p_i) \mathcal{M}_{\mathrm{fi}},
+\end{equation}
+where only on-shell processes satisfying four-momentum conservation contribute observable transition amplitudes. Correspondingly, only \textbf{externalized concrete actions} constitute observable events in interpersonal interaction.
+
+\textbf{Corollary.} The moral evaluation of thoughts differs categorically from that of actions. Replaying a scene repeatedly in one's mind---whatever its content---so long as it remains unexpressed, does not alter the wavefunction evolution of any other system. This is not a moral defense but a physical fact: \textbf{thoughts are not actions, just as vacuum fluctuations do not alter energy levels.}
+
+The practical value of this proposition lies in providing a strict separation between internal anxiety and external responsibility. The images a person constructs in their mind (such as imagined future catastrophes, hypothetical expectations of another's misfortune) constitute virtual processes that leave the external world unchanged; excessive self-punishment over such thoughts is an unnecessary form of self-inflicted suffering.
+
+\textbf{Proposition 6 (Coupling hysteresis theorem).} For two systems that have undergone strong coupling, after decoupling their ground state differs from that of a system never coupled:
+\begin{equation}
+\ket{0'}_A \neq \ket{0}_A,
+\end{equation}
+where $\ket{0}_A$ is the pre-coupling ground state and $\ket{0'}_A$ the post-decoupling ground state. The residual off-diagonal elements decay asymptotically with evolution time $t$:
+\begin{equation}
+|\bra{i}\hat{P}_A(t)\ket{j}| \sim e^{-\Gamma t} \to 0 \quad (t\to\infty),
+\end{equation}
+but reaching exactly zero requires $t\to\infty$. This means: \textbf{certain traces never vanish completely, only asymptotically approach zero.} This is not pathology but dynamical necessity---just as any real physical process leaves records in the system that cannot be perfectly erased.
+
+\section{Environmental Decoherence and Distance}
+
+\textbf{Proposition 7 (Environmental decoherence mechanism).} Physical and social distance serve as environmental degrees of freedom that exert continuous decoherence on quantum correlations between two systems. Let systems $A$ and $B$ be in an entangled state; coupling to the environment $\mathcal{E}$ causes the off-diagonal elements of the reduced density matrix to decay exponentially with time:
+\begin{equation}
+\rho_{AB}(t) \xrightarrow{\text{decoherence}} \sum_k p_k \ket{\psi_k}_A\bra{\psi_k} \otimes \ket{\phi_k}_B\bra{\phi_k},
+\end{equation}
+i.e., from an entangled state to a separable (classically correlated) state.
+
+\textbf{Practical implication.} Geographic separation and social disconnection are not evasion but the utilization of natural decoherence mechanisms to reduce the effective coupling strength between two systems. Imposing distance on a relationship---whether physical distance (different cities) or informational distance (deleting contact information)---amounts to exposing it to environmental decoherence. After sufficient time, the entangled state degrades into a statistical mixture: each party evolves under their own Hamiltonian, no longer exhibiting nonlocal correlations. \textbf{Distance is a natural decoherence agent.}
+
+\section{Social Roles and Selective Diagonalization}
+
+In different social contexts, the same individual projects matrix elements onto different basis vectors:
+\begin{equation}
+\hat{P}_A \ket{\text{context}} = \sum_{k\in\text{relevant subspace}} p_{k} \ket{k} + \sum_{l\notin\text{relevant subspace}} p_{l} \ket{l},
+\end{equation}
+where the second sum is not excited in the current context; its projection amplitudes are zero or negligible.
+
+This means: \textbf{being an uncle in front of a nephew, a son in front of a mother, a student in front of an advisor---each role is a genuine projection of the operator onto a specific set of basis vectors, none of them false.} Not exposing all matrix elements to all observers is not deception but the natural behavior of an operator under different bases: a person displays only the subspace that commutes with a given social context.
+
+This perspective dissolves common anxieties about ``consistency'' and ``authenticity'': the goal is not to be an identical person to everyone, but to ensure that projections across all contexts originate from the same operator---i.e., \textbf{each role is a genuine projection of the same operator onto a different basis}.
 \section{Tolerance as Spectral Decomposition}
 % ============================================================
 
